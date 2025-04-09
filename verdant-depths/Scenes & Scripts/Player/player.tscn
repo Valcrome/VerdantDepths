@@ -725,8 +725,9 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b842k"]
-radius = 5.5
-height = 11.0
+resource_local_to_scene = true
+radius = 2.3
+height = 5.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nh6bo"]
 radius = 5.0
@@ -740,11 +741,11 @@ current_tool = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -9)
 sprite_frames = SubResource("SpriteFrames_daonq")
-animation = &"chop_side"
-frame = 3
+animation = &"sword_side"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -8.5)
+position = Vector2(-0.5, -4.3)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_b842k")
 
 [node name="AttackOffsetNode" type="Node2D" parent="."]
